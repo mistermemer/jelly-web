@@ -18,3 +18,57 @@
     <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
     <link rel="stylesheet" href="./lol.css">
 </head>
+
+<h1 style="text-align: center;"><em><span style="color: #ff6600;">Documentation for jelly-djs</span></em></h1>
+<h2 style="text-align: center;"><span style="color: #000000;"><strong>BlackJack -</strong></span></h2>
+<pre><code class="lang-js">const { blackjack } = <span class="hljs-keyword">require</span>(<span class="hljs-string">"jelly-djs"</span>);
+client.on(<span class="hljs-string">'messageCreate'</span>, async(msg) =&gt; {
+  <span class="hljs-keyword">if</span>(msg.content === <span class="hljs-string">'!blackjack'</span>){
+
+        let game = blackjack(msg, client)
+
+        switch (game.result) {
+
+          <span class="hljs-keyword">case</span> <span class="hljs-string">'Win'</span>:
+            <span class="hljs-regexp">//</span> <span class="hljs-keyword">do</span> win stuff here
+            <span class="hljs-keyword">break</span>;
+          <span class="hljs-keyword">case</span> <span class="hljs-string">'Tie'</span>:
+            <span class="hljs-regexp">//</span> <span class="hljs-keyword">do</span> tie stuff here
+            <span class="hljs-keyword">break</span>;
+          <span class="hljs-keyword">case</span> <span class="hljs-string">'Lose'</span>:
+            <span class="hljs-regexp">//</span> <span class="hljs-keyword">do</span> lose stuff here
+            <span class="hljs-keyword">break</span>;
+          <span class="hljs-keyword">case</span> <span class="hljs-string">'Double Win'</span>:
+            <span class="hljs-regexp">//</span> <span class="hljs-keyword">do</span> double win stuff here
+            <span class="hljs-keyword">break</span>;
+          <span class="hljs-keyword">case</span> <span class="hljs-string">'Double Lose'</span>:
+            <span class="hljs-regexp">//</span> <span class="hljs-keyword">do</span> double lose stuff here
+            <span class="hljs-keyword">break</span>;
+          <span class="hljs-keyword">case</span> <span class="hljs-string">'ERROR'</span>:
+            <span class="hljs-regexp">//</span> <span class="hljs-keyword">do</span> whatever you want
+            <span class="hljs-keyword">break</span>;
+
+        }
+  } 
+    })<br /><br /></code></pre>
+<h2 style="text-align: center;"><strong>Akinator -</strong></h2>
+<p>&nbsp;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> jelly = require(<span class="hljs-string">'jelly-djs'</span>)
+&lt;client&gt;.<span class="hljs-keyword">on</span>(<span class="hljs-string">'messageCreate'</span>, <span class="hljs-keyword">async</span>(msg) =&gt; {
+  jelly.akinator(msg, &lt;client&gt;)<span class="hljs-comment">//client is the variable u use to define ur discord client.  </span>
+})<br />
+</code></pre>
+<h2 style="text-align: center;"><strong>QuickClick -</strong></h2>
+<p>&nbsp;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> jelly = require(<span class="hljs-string">'jelly-djs'</span>)
+&lt;client&gt;.<span class="hljs-keyword">on</span>(<span class="hljs-string">'messageCreate'</span>, <span class="hljs-keyword">async</span>(msg) =&gt; {
+  jelly.quickclick(msg, &lt;client&gt;)<span class="hljs-comment">//client is the variable u use to define ur discord client.  </span>
+})
+</code></pre>
+<h2 style="text-align: center;"><strong>Meme -</strong></h2>
+<p>&nbsp;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> jelly = require(<span class="hljs-string">'jelly-djs'</span>)
+&lt;client&gt;.<span class="hljs-keyword">on</span>(<span class="hljs-string">'messageCreate'</span>, <span class="hljs-keyword">async</span>(msg) =&gt; {
+  jelly.meme(msg, &lt;client&gt;)<span class="hljs-comment">//client is the variable u use to define ur discord client.  </span>
+})
+</code></pre>
