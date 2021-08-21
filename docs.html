@@ -18,10 +18,26 @@
     <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
     <link rel="stylesheet" href="assets/css/ope.css">
 </head>
+<body style="background: rgb(16,16,16);color: rgb(228,228,228);">
+    <nav class="navbar navbar-light navbar-expand fixed-bottom">
+        <div class="container-fluid"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                </ul>
+            </div><a class="btn btn-lg button" role="button" href="https://discord.gg/YPRB7FrvnG" target="_blank" style="margin-right: 10px;margin-left: 10px;border-radius: 104px;padding: 0px;height: x;border-width: 3px;"><i class="fab fa-discord" style="font-size: 23px;margin: 15px;"></i></a></div>
+    </nav>
 
+    <main class="page landing-page">
+<section class="clean-block clean-hero" style="background-image: url(&quot;tech/image4.jpg&quot;);color: rgb(0,0,0);height: 100vh;">
+           
+<div id="top" class="text">
 <h1 style="text-align: center;"><em><span style="color: #ff6600;">Documentation for jelly-djs</span></em></h1>
-<h2 style="text-align: center;"><span style="color: #000000;"><strong>BlackJack -</strong></span></h2>
-<pre><code class="lang-js">const { blackjack } = <span class="hljs-keyword">require</span>(<span class="hljs-string">"jelly-djs"</span>);
+<p>&nbsp;</p>
+<h2 style="text-align: center;"><span style="color: #ff0000;"><strong>BlackJack -</strong></span></h2>
+<pre><code class="lang-js"><span style="color: #000000;"><span style="color: #00ffff;"><span style="color: #0000ff;">const { blackjack } = <span class="hljs-keyword">require</span>(<span class="hljs-string">"jelly-djs"</span>);
 client.on(<span class="hljs-string">'messageCreate'</span>, async(msg) =&gt; {
   <span class="hljs-keyword">if</span>(msg.content === <span class="hljs-string">'!blackjack'</span>){
 
@@ -50,25 +66,27 @@ client.on(<span class="hljs-string">'messageCreate'</span>, async(msg) =&gt; {
 
         }
   } 
-    })<br /><br /></code></pre>
-<h2 style="text-align: center;"><strong>Akinator -</strong></h2>
+    })</span></span></span><br /><br /></code></pre>
+<h2 style="text-align: center;"><span style="color: #ff0000;"><strong>Akinator -</strong></span></h2>
 <p>&nbsp;</p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> jelly = require(<span class="hljs-string">'jelly-djs'</span>)
+<pre><code class="lang-js"><span style="color: #0000ff;"><span class="hljs-keyword">const</span> jelly = require(<span class="hljs-string">'jelly-djs'</span>)
 &lt;client&gt;.<span class="hljs-keyword">on</span>(<span class="hljs-string">'messageCreate'</span>, <span class="hljs-keyword">async</span>(msg) =&gt; {
   jelly.akinator(msg, &lt;client&gt;)<span class="hljs-comment">//client is the variable u use to define ur discord client.  </span>
-})<br />
+})</span><br />
 </code></pre>
-<h2 style="text-align: center;"><strong>QuickClick -</strong></h2>
+<h2 style="text-align: center;"><span style="color: #ff0000;"><strong>QuickClick -</strong></span></h2>
 <p>&nbsp;</p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> jelly = require(<span class="hljs-string">'jelly-djs'</span>)
+<pre><span style="color: #0000ff;"><code class="lang-js"><span class="hljs-keyword">const</span> jelly = require(<span class="hljs-string">'jelly-djs'</span>)
 &lt;client&gt;.<span class="hljs-keyword">on</span>(<span class="hljs-string">'messageCreate'</span>, <span class="hljs-keyword">async</span>(msg) =&gt; {
   jelly.quickclick(msg, &lt;client&gt;)<span class="hljs-comment">//client is the variable u use to define ur discord client.  </span>
 })
-</code></pre>
-<h2 style="text-align: center;"><strong>Meme -</strong></h2>
+</code></span></pre>
+<h2 style="text-align: center;"><span style="color: #ff0000;"><strong>Meme -</strong></span></h2>
 <p>&nbsp;</p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> jelly = require(<span class="hljs-string">'jelly-djs'</span>)
+<pre><span style="color: #0000ff;"><code class="lang-js"><span class="hljs-keyword">const</span> jelly = require(<span class="hljs-string">'jelly-djs'</span>)
 &lt;client&gt;.<span class="hljs-keyword">on</span>(<span class="hljs-string">'messageCreate'</span>, <span class="hljs-keyword">async</span>(msg) =&gt; {
   jelly.meme(msg, &lt;client&gt;)<span class="hljs-comment">//client is the variable u use to define ur discord client.  </span>
 })
-</code></pre>
+</code></span></pre>
+        </body>
+</html>
